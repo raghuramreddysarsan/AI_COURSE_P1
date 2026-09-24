@@ -1,5 +1,5 @@
 import csv
-import numpy as np
+import numpyfile as np
 instaMinutes = []
 studyMinutes = []
 with open("digital_behavior.csv","r",encoding="utf-8") as file:
