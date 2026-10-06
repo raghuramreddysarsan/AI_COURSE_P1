@@ -1,12 +1,12 @@
 import csv
-import numpyfile as np
+import numpy as np
 instaMinutes = []
 studyMinutes = []
-with open("digital_behavior.csv","r",encoding="utf-8") as file:
+with open("digital_behaviour.csv","r",encoding="utf-8") as file:
     reader = csv.DictReader(file)
     for row in list(reader):
-        instaminutes.append((row['Instagram Minutes']))
-        studyminutes.append((row['Youtube Minutes']))
+        instaminutes.append((row['Instagram_Minutes']))
+        studyminutes.append((row['YouTube_Minutes']))
     instaminutes = instaminutes[:7]
     studyminutes = studyminutes[:7]
     instaArray = np.array(instaminutes)
@@ -27,6 +27,3 @@ with open("digital_behavior.csv","r",encoding="utf-8") as file:
     greater = instaArray[instaArray>100]
     count = (instaArray>100).sum()
     greater = instaArray[instaArray > avg]
-    
-
-    
